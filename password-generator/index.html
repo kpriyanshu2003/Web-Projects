@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-width: 700px)"
+      href="./style-lg.css"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body style="display: flex; justify-content: center">
+    <div>
+      <!-- Title -->
+      <div style="margin: 20px 0px">
+        <span style="font-size: 30px; font-weight: 800"
+          >Password Generator</span
+        >
+      </div>
+
+      <!-- Output -->
+      <div style="margin-top: 40px; margin-bottom: 20px">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+          "
+        >
+          <input
+            type="text"
+            name=""
+            id="output"
+            style="width: 100%; padding: 10px 20px"
+          />
+        </div>
+        <!-- Progress Bar will go here -->
+      </div>
+
+      <!-- Customize -->
+      <div style="margin-top: 20px">
+        <span style="font-size: 20px; font-weight: 500"
+          >Customize your Passsword</span
+        >
+        <hr />
+        <br />
+        <span style="display: block">Password Length : </span><br />
+        <div style="display: flex; align-items: center">
+          <input
+            type="number"
+            name=""
+            id=""
+            max="50"
+            min="1"
+            style="width: 60px; padding: 10px; margin-right: 10px"
+          />
+          <input type="range" name="" id="" style="width: 80%" />
+        </div>
+      </div>
+      <!-- More Control -->
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+          padding: 0px 10px;
+        "
+      >
+        <div>
+          <input type="radio" name="optn" id="easy_say" />
+          &nbsp;<label for="easy_say">Easy to say</label>&nbsp;<i
+            class="fa-solid fa-circle-info"
+          ></i
+          ><br />
+          <input type="radio" name="optn" id="easy_read" />
+          &nbsp;<label for="easy_read">Easy to read</label>&nbsp;<i
+            class="fa-solid fa-circle-info"
+          ></i
+          ><br />
+          <input type="radio" name="optn" id="all" />
+          &nbsp;<label for="all">All characters</label>&nbsp;<i
+            class="fa-solid fa-circle-info"
+          ></i
+          ><br />
+        </div>
+        <div>
+          <input type="checkbox" name="" id="uppercase" />&nbsp;<span
+            >Uppercase</span
+          ><br />
+          <input type="checkbox" name="" id="lowercase" />&nbsp;<span
+            >Lowercase</span
+          ><br />
+          <input type="checkbox" name="" id="number" />&nbsp;<span>Numbers</span
+          ><br />
+          <input type="checkbox" name="" id="symbol" />&nbsp;<span>Symbols</span
+          ><br />
+        </div>
+      </div>
+      <button onclick="generate()">Generate</button>
+      <button onclick="copy()" id="btn-copy">Copy</button>
+    </div>
+  </body>
+</html>

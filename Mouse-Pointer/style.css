@@ -1,0 +1,74 @@
+table {
+border: 2px solid black;
+width: 100%;
+height: 100%;
+}
+
+tr {
+width: 100%;
+height: 100px;
+}
+
+td {
+border: 2px solid black;
+}
+
+.copy {
+cursor: copy;
+}
+
+.crosshair {
+cursor: crosshair;
+}
+
+.pointer {
+cursor: pointer;
+}
+
+.grabbing {
+cursor: grabbing;
+}
+
+.help {
+cursor: help;
+}
+
+.move {
+cursor: move;
+}
+
+.progress {
+cursor: progress;
+}
+
+.notallowed {
+cursor: not-allowed;
+}
+
+.none {
+cursor: none;
+}
+
+.text {
+cursor: text;
+}
+
+.sresize {
+cursor: s-resize;
+}
+
+.swresize {
+cursor: sw-resize;
+}
+
+.colresize {
+cursor: col-resize;
+}
+
+.rowresize {
+cursor: row-resize;
+}
+
+.custom {
+cursor: url('a.jpg');
+}

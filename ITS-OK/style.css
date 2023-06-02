@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 20px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  background-color: white;
+  font-family: monospace;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  transition: box-shadow 0.15s, transform 0.15s;
+  white-space: nowrap;
+  user-select: none;
+}
+
+#btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+#box {
+  font-size: 18px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  border: 5px solid rgb(178, 178, 178);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.progress {
+  margin-top: 15px;
+  background: rgb(178, 178, 178);
+  border-radius: 50px;
+  align-items: center;
+  padding: 0 3px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  height: 15px;
+  width: 95%;
+}
+
+.progress-value {
+  animation: load 8s ease forwards;
+  border-radius: 50px;
+  background: rgb(2, 158, 2);
+  height: 10px;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#final {
+  /* transition: display 10s ease; */
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -60%);
+  border: 10px solid rgb(2, 82, 0);
+  background-color: rgb(22, 117, 25);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 0px 47px 25px rgb(0, 0, 0, 0.2);
+}
+
+#conti {
+  background-color: rgb(186, 214, 186);
+  color: rgb(24, 153, 0);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  #box {
+    width: 80%;
+    transform: translate(-50%, -150%);
+  }
+  #final {
+    width: 90%;
+  }
+}

@@ -1,0 +1,53 @@
+div {
+  font-family: "Montserrat", sans-serif;
+}
+.text:after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  --white: linear-gradient(white, white);
+  --gradient: linear-gradient(to right, #31cccc, #3b86de);
+  border: solid 0.25rem transparent;
+  border-radius: 0.5rem;
+  background: var(--white) padding-box, var(--gradient) border-box;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.info {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .text:after {
+    content: "This is a smartphone (potrait)";
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .text:after {
+    content: "This is a smartphone (landscape)";
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .text:after {
+    content: "This is a tablet";
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+  .text:after {
+    content: "This is a small screen dektop";
+  }
+}
+@media screen and (min-width: 1440px) {
+  .text:after {
+    content: "This is a large screen desktop";
+  }
+}
+
+body {
+  background: black;
+  color: white;
+}

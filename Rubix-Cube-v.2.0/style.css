@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(rgb(5, 222, 245), rgb(6, 150, 253));
+}
+
+.container {
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  top: 50vh;
+  left: 30vw;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  left: 100px;
+  top: 50px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: animate 6s infinite;
+}
+
+.box div {
+  position: absolute;
+  transform-style: inherit;
+}
+
+.box div div {
+  height: 100px;
+  width: 100px;
+  padding: 25px 30px;
+  border: 1px solid rgb(0, 0, 0);
+  color: transparent;
+  font-size: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-100 {
+  top: 100px;
+}
+
+.top-200 {
+  top: 200px;
+}
+
+.transZ-100 {
+  transform: translateZ(100px);
+}
+
+.transZ--100 {
+  transform: translateZ(-100px);
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-100 {
+  left: 100px;
+}
+
+.left-200 {
+  left: 200px;
+}
+
+.front {
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  transform: translateZ(50px);
+}
+
+.back {
+  background-color: red;
+  top: 0px;
+  left: 0px;
+  transform: translateZ(-50px);
+}
+
+.left {
+  background-color: blue;
+  top: 0px;
+  left: -50px;
+  transform: rotateY(-90deg);
+}
+
+.right {
+  background-color: green;
+  top: 0px;
+  left: 50px;
+  transform: rotateY(90deg);
+}
+
+.top {
+  background-color: orange;
+  top: -50px;
+  left: 0px;
+  transform: rotateX(90deg);
+}
+
+.bottom {
+  background-color: yellow;
+  top: 50px;
+  left: 0px;
+  transform: rotateX(-90deg);
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+
+  12.5% {
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+
+  25% {
+    transform: rotateX(45deg) rotateY(-135deg);
+  }
+
+  37.5% {
+    transform: rotateX(-45deg) rotateY(-135deg);
+  }
+
+  50% {
+    transform: rotateX(-45deg) rotateY(135deg);
+  }
+
+  62.5% {
+    transform: rotateX(45deg) rotateY(135deg);
+  }
+
+  75% {
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+
+  87.5% {
+    transform: rotateX(-45deg) rotateY(45deg);
+  }
+}

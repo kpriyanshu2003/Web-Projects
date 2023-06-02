@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(rgb(5, 222, 245), rgb(6, 150, 253));
+}
+
+.container {
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  top: 50vh;
+  left: 30vw;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+
+.box {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  transform-style: preserve-3d;
+  animation: animate 5s infinite;
+  transform: rotateX(45deg) rotateY(45deg);
+}
+
+.front div,
+.left div,
+.right div,
+.top div,
+.bottom div,
+.back div {
+  height: 100px;
+  width: 100px;
+  padding: 25px;
+  border: 1px solid black;
+  font-size: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.front,
+.left,
+.right,
+.top,
+.bottom,
+.back {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+}
+
+.front {
+  top: 0px;
+  left: 0px;
+  transform: translateZ(150px);
+}
+
+.back {
+  top: 0px;
+  left: 0px;
+  transform: translateZ(-150px) rotateY(180deg);
+}
+
+.left {
+  top: 0px;
+  left: -150px;
+  transform: rotateY(-90deg);
+}
+
+.right {
+  top: 0px;
+  left: 150px;
+  transform: rotateY(90deg);
+}
+
+.top {
+  top: -150px;
+  left: 0px;
+  transform: rotateX(90deg);
+}
+
+.bottom {
+  top: 150px;
+  left: 0px;
+  transform: rotateX(90deg);
+}
+
+.uno {
+  top: 0;
+  left: 0;
+}
+
+.dos {
+  top: 0px;
+  left: 100px;
+}
+
+.tres {
+  top: 0px;
+  left: 200px;
+}
+
+.cuatro {
+  top: 100px;
+  left: 0px;
+}
+
+.cinco {
+  top: 100px;
+  left: 100px;
+}
+
+.seis {
+  top: 100px;
+  left: 200px;
+}
+
+.siete {
+  top: 200px;
+  left: 0px;
+}
+
+.ocho {
+  top: 200px;
+  left: 100px;
+}
+
+.nueve {
+  top: 200px;
+  left: 200px;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+
+  20% {
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+
+  40% {
+    transform: rotateX(-45deg) rotateY(45deg);
+  }
+
+  60% {
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+
+  80% {
+    transform: rotateX(135deg) rotateY(-45deg);
+  }
+}

@@ -1,0 +1,31 @@
+figure {
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+}
+
+figure > img {
+  border-radius: 10px;
+  filter: brightness(110%);
+  transition: all 200ms ease;
+}
+
+figure > figcaption {
+  visibility: hidden;
+  position: absolute;
+  font-size: 4.5vw;
+}
+
+figure:hover > img {
+  filter: brightness(40%);
+  transition: all 200ms ease;
+}
+
+figure:hover > figcaption {
+  visibility: visible;
+  transition: all 200ms ease;
+}

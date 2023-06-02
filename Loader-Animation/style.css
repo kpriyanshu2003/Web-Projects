@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
+
+.loader > span {
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: rgb(87, 254, 229);
+  border-radius: 50%;
+  position: relative;
+  margin: 0 5px;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-1 {
+  animation: anim 1s linear 0s infinite;
+}
+
+.dot-2 {
+  animation: anim 1s linear 0.25s infinite;
+}
+
+.dot-3 {
+  animation: anim 1s linear 0.5s infinite;
+}
+
+.dot-4 {
+  animation: anim 1s linear 0.75s infinite;
+}
+
+@keyframes anim {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 15px;
+  }
+
+  100% {
+    top: 0;
+  }
+}

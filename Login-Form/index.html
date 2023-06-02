@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="login_text mt-20 mb-20">Login</div>
+      <hr />
+      <div class="input">
+        <input type="text" id="name" placeholder="Full Name" class="mt-20" />
+        <input
+          type="number"
+          id="phone"
+          placeholder="Phone Number"
+          class="mt-20"
+        />
+        <input type="email" placeholder="Email" class="mt-20" id="email" />
+        <input
+          type="password"
+          placeholder="Password"
+          class="mt-20"
+          id="password"
+        />
+        <div class="gender mt-20" id="gen">
+          <div class="male">
+            <input type="radio" name="gender" value="male" id="r_male" />
+            <label for="r_male">Male</label>
+          </div>
+          <div class="female">
+            <input type="radio" name="gender" value="female" id="r_female" />
+            <label for="r_female">Female</label>
+          </div>
+        </div>
+        <span class="mt-20">Forgot Password ?</span>
+        <button type="submit">Login</button>
+        <div class="noaccount">
+          <span>Not a member ?</span>
+          <span>Sign up</span>
+        </div>
+      </div>
+    </form>
+    <!-- <script src="./script.js"></script> -->
+  </body>
+</html>

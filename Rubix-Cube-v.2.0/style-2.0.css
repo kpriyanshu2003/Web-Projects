@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(rgb(5, 222, 245), rgb(6, 150, 253));
+}
+
+.container {
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  top: 50vh;
+  left: 30vw;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: animate 5s infinite;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen,
+.fifteen,
+.sixteen,
+.seventeen,
+.eighteen,
+.nineteen,
+.twenty,
+.twentyone,
+.twentytwo,
+.twentythree,
+.twentyfour,
+.twentyfive,
+.twentysix,
+.twentyseven {
+  position: absolute;
+  transform-style: inherit;
+}
+
+.one div,
+.two div,
+.three div,
+.four div,
+.five div,
+.six div,
+.seven div,
+.eight div,
+.nine div,
+.ten div,
+.eleven div,
+.twelve div,
+.thirteen div,
+.fourteen div,
+.fifteen div,
+.sixteen div,
+.seventeen div,
+.eighteen div,
+.nineteen div,
+.twenty div,
+.twentyone div,
+.twentytwo div,
+.twentythree div,
+.twentyfour div,
+.twentyfive div,
+.twentysix div,
+.twentyseven div {
+  height: 100px;
+  width: 100px;
+  padding: 25px 30px;
+  border: 1px solid rgb(0, 0, 0);
+  color: transparent;
+  font-size: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+  top: 0px;
+}
+
+.ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen,
+.fifteen,
+.sixteen,
+.seventeen,
+.eighteen {
+  top: 100px;
+}
+
+.nineteen,
+.twenty,
+.twentyone,
+.twentytwo,
+.twentythree,
+.twentyfour,
+.twentyfive,
+.twentysix,
+.twentyseven {
+  top: 200px;
+}
+
+.one,
+.two,
+.three,
+.ten,
+.eleven,
+.twelve,
+.nineteen,
+.twenty,
+.twentyone {
+  transform: translateZ(100px);
+}
+
+.seven,
+.eight,
+.nine,
+.sixteen,
+.seventeen,
+.eighteen,
+.twentyfive,
+.twentysix,
+.twentyseven {
+  transform: translateZ(-100px);
+}
+
+.one,
+.four,
+.seven,
+.ten,
+.ten,
+.thirteen,
+.sixteen,
+.nineteen,
+.twentytwo,
+.twentyfive {
+  left: 0px;
+}
+
+.two,
+.five,
+.eight,
+.eleven,
+.fourteen,
+.seventeen,
+.twenty,
+.twentythree,
+.twentysix {
+  left: 100px;
+}
+
+.three,
+.six,
+.nine,
+.twelve,
+.fifteen,
+.eighteen,
+.twentyone,
+.twentyfour,
+.twentyseven {
+  left: 200px;
+}
+
+.front {
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  transform: translateZ(50px);
+}
+
+.back {
+  background-color: red;
+  top: 0px;
+  left: 0px;
+  transform: translateZ(-50px);
+}
+
+.left {
+  background-color: blue;
+  top: 0px;
+  left: -50px;
+  transform: rotateY(-90deg);
+}
+
+.right {
+  background-color: green;
+  top: 0px;
+  left: 50px;
+  transform: rotateY(90deg);
+}
+
+.top {
+  background-color: orange;
+  top: -50px;
+  left: 0px;
+  transform: rotateX(90deg);
+}
+
+.bottom {
+  background-color: yellow;
+  top: 50px;
+  left: 0px;
+  transform: rotateX(-90deg);
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+
+  12.5% {
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+
+  25% {
+    transform: rotateX(45deg) rotateY(-135deg);
+  }
+
+  37.5% {
+    transform: rotateX(-45deg) rotateY(-135deg);
+  }
+
+  50% {
+    transform: rotateX(-45deg) rotateY(135deg);
+  }
+
+  62.5% {
+    transform: rotateX(45deg) rotateY(135deg);
+  }
+
+  75% {
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+
+  87.5% {
+    transform: rotateX(-45deg) rotateY(45deg);
+  }
+}
