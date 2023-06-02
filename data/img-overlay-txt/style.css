@@ -9,6 +9,7 @@ figure {
 }
 
 figure > img {
+  width: 500px;
   border-radius: 10px;
   filter: brightness(110%);
   transition: all 200ms ease;
@@ -17,6 +18,7 @@ figure > img {
 figure > figcaption {
   visibility: hidden;
   position: absolute;
+  color: white;
   font-size: 4.5vw;
 }
 
@@ -27,5 +29,5 @@ figure:hover > img {
 
 figure:hover > figcaption {
   visibility: visible;
-  transition: all 200ms ease;
+  transition: all 600ms ease;
 }

@@ -1,3 +1,7 @@
+body {
+  font-size: larger;
+}
+
 .parent {
   display: grid;
   grid: "header header header" "main main sidebar" "footer footer footer";
