@@ -3,8 +3,6 @@ const root = document.getElementById("root");
 fetch(`./data.json`)
   .then((response) => response.json())
   .then((data) => {
-    // Use the JSON data here
-    console.log(data);
     let tmp = `<tr>
         <th>Sl No</th>
         <th>Name</th>

@@ -1,5 +1,11 @@
 [
   {
+    "name": "Analog Clock",
+    "description": "Analog Clock using HTML, TailwindCSS and JS",
+    "status": 1,
+    "link": "./data/analog-clock"
+  },
+  {
     "name": "Breakpoints",
     "description": "Implementation of breakpoints logic",
     "status": 1,
@@ -160,5 +166,11 @@
     "description": "Yeti Themed Login Form",
     "status": 1,
     "link": "./data/yeti-login-form"
+  },
+  {
+    "name": "Temp Folder",
+    "description": "Only for local machine of author",
+    "status": 1,
+    "link": "./data/temp"
   }
 ]
