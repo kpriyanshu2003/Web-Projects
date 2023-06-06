@@ -1,20 +1,26 @@
 const hour = document.getElementById("hour");
 const minute = document.getElementById("minute");
 const second = document.getElementById("second");
+const time = document.querySelector(".time");
 
 function rotateClockHands() {
-  const now = new Date();
-  const seconds = now.getSeconds();
-  const minutes = now.getMinutes();
-  const hours = now.getHours();
-  console.log(`${hours}:${minutes}:${seconds}`);
-  const secondRotation = (seconds / 60) * 360;
-  const minuteRotation = ((minutes * 60 + seconds) / 3600) * 360;
-  const hourRotation = ((hours % 12) / 12) * 360 + (minutes / 60) * 30;
+  const dt = new Date();
+  const s = dt.getSeconds();
+  const m = dt.getMinutes();
+  const h = dt.getHours();
 
-  second.style.transform = `rotate(${secondRotation}deg)`;
-  minute.style.transform = `rotate(${minuteRotation}deg)`;
-  hour.style.transform = `rotate(${hourRotation}deg)`;
+  const sRotate = s * 6;
+  const mRotate = m * 6;
+  const hRotate = 30 * h + m / 2;
+
+  second.style.transform = `rotate(${sRotate}deg)`;
+  minute.style.transform = `rotate(${mRotate}deg)`;
+  hour.style.transform = `rotate(${hRotate}deg)`;
+
+  time.innerHTML = `
+  ${String(h).padStart(2, "0")} :
+  ${String(m).padStart(2, "0")} :
+  ${String(s).padStart(2, "0")}`;
 }
 
 setInterval(rotateClockHands, 1000);
