@@ -6,6 +6,18 @@
     "link": "./data/analog-clock"
   },
   {
+    "name": "Axios",
+    "description": "Implementation of Axios",
+    "status": 1,
+    "link": "./data/axios"
+  },
+  {
+    "name": "Axios vs Fetch",
+    "description": "Implementation of Fetch and Axios",
+    "status": 1,
+    "link": "./data/axiosVSfetch"
+  },
+  {
     "name": "Breakpoints",
     "description": "Implementation of breakpoints logic",
     "status": 1,

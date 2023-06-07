@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axios Implementation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class="p-2">
+    <div class="w-1/2 flex items-center">
+      <input
+        type="text"
+        placeholder="Enter a request URL"
+        id="requestURL"
+        class="outline-none border border-slate-500 rounded w-full p-3"
+      />
+      <button
+        onclick="makeRequest('get')"
+        class="border bg-slate-300 ml-4 rounded px-2 whitespace-nowrap py-3"
+      >
+        Send GET
+      </button>
+      <button
+        onclick="makeRequest('post')"
+        class="border bg-slate-300 ml-4 rounded px-2 whitespace-nowrap py-3"
+      >
+        Send POST
+      </button>
+    </div>
+
+    <div class="w-1/2 font-mono pr-2 mt-10">
+      <span class="text-2xl">Status</span>
+      <div
+        class="border border-slate-500 rounded p-2 overflow-auto h-16"
+        id="statusCode"
+      >
+        <span class="text-sm">Status Code</span>
+      </div>
+    </div>
+    <div class="w-1/2 font-mono pr-2 mt-10">
+      <span class="text-2xl">Headers</span>
+      <div
+        class="border border-slate-500 rounded p-2 overflow-auto h-36"
+        id="requestHeader"
+      >
+        <span class="text-sm">Status Code</span>
+      </div>
+    </div>
+    <div class="w-1/2 font-mono pr-2 mt-10">
+      <span class="text-2xl">Data</span>
+      <div
+        class="border border-slate-500 rounded p-2 overflow-auto h-96"
+        id="requestData"
+      >
+        <span class="text-sm">Request Output</span>
+      </div>
+    </div>
+  </body>
+</html>

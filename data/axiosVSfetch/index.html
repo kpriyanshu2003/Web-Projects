@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axios vs Fetch</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-2">
+    <div class="w-full flex items-center">
+      <input
+        type="text"
+        placeholder="Enter an API request"
+        id="requestURL"
+        class="outline-none border border-slate-500 rounded w-full p-3"
+      />
+      <button
+        onclick="makeRequest()"
+        class="border bg-slate-300 ml-4 rounded px-2 whitespace-nowrap py-3"
+      >
+        Send Request
+      </button>
+    </div>
+    <div class="flex items-center mt-5 h-48 font-mono w-full pr-2">
+      <div class="w-1/2 mr-2 h-full">
+        <span>Fetch</span>
+        <div
+          class="border border-slate-500 rounded p-2 overflow-auto"
+          id="Fetch"
+        >
+          <span class="text-sm">Fetch API Request Output</span>
+        </div>
+      </div>
+      <div class="w-1/2 h-full">
+        <span>Axios</span>
+        <div
+          class="border border-slate-500 rounded p-2 overflow-auto"
+          id="Axios"
+        >
+          <span class="text-sm">Axios Request Output</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
