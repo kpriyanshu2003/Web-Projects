@@ -75,7 +75,7 @@
     "name": "Form Validation",
     "description": "A client side form validator",
     "status": 1,
-    "link": "./data/form-validation"
+    "link": "./data/form-validation/signup.html"
   },
   {
     "name": "Gradient Border",
