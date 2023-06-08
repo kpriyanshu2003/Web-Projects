@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- <script src="./script.js" defer></script> -->
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <form action="" id="signup">
+    <form onsubmit="submitFormLogin(event)" method="post">
       <div class="login_text mt-20 mb-20">Login</div>
       <hr />
       <div class="input">
         <input
           type="text"
           name="username"
-          id="username"
           class="mt-20"
           placeholder="Username"
+          pattern="[A-Za-z0-9\._]+"
+          title="Use alphabets, digits and special characters."
         />
         <input
           type="password"
           placeholder="Password"
           class="mt-20"
-          id="password"
+          pattern="[A-Za-z0-9\._]+"
+          title="Use only alphabets, digits, dots and underscore."
         />
-        <button type="submit">Sign Up</button>
+        <button type="submit" class="pointer">Login</button>
         <div class="noaccount">
           <span>Not a member ?</span>
           <span onclick="location.href='./signup.html'" class="pointer"

@@ -9,55 +9,55 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <form action="#" id="signup">
+    <form onsubmit="submitSignUp(event)" method="post">
       <div class="login_text mt-20 mb-20">Sign Up</div>
       <hr />
       <div class="input">
         <input
           type="text"
-          id="name"
           placeholder="Full Name"
           class="mt-20"
-          pattern=""
+          pattern="^[A-Za-z]+\s[a-zA-Z]+$"
+          title="Enter a first and last name only, separated by a white space."
         />
         <input
           type="text"
-          id="phone"
           placeholder="Phone Number"
           class="mt-20"
-          maxlength="10"
-          minlength="10"
+          pattern="\d{10}"
+          title="Enter IN phone number without country code."
         />
         <input
           type="text"
           name="username"
-          id="username"
           class="mt-20"
           placeholder="Username"
-          pattern=""
+          maxlength="12"
+          pattern="[A-Za-z0-9\._]+"
+          title="Use alphabets, digits and special characters."
         />
         <input
           type="email"
           placeholder="Email"
           class="mt-20"
-          id="email"
-          pattern=""
+          pattern="^[A-Za-z0-9!#$%&'*+\-/=?^_`{|}~.]+$"
+          title="Match the format username@domain.com"
         />
         <input
           type="password"
           placeholder="Password"
           class="mt-20"
-          id="password"
-          pattern=""
+          pattern="[A-Za-z0-9\._]+"
+          title="Use only alphabets, digits, dot and underscore"
         />
         <input
-          type="confpassword"
+          type="password"
           placeholder="Confirm Password"
           class="mt-20"
-          id="confpassword"
-          pattern=""
+          pattern="[A-Za-z0-9\._]+"
+          title="Use only alphabets, digits, dot and underscore."
         />
-        <div class="gender mt-20" id="gen">
+        <div class="gender mt-20">
           <div class="male">
             <input type="radio" name="gender" value="male" id="r_male" />
             <label for="r_male">Male</label>
@@ -67,7 +67,7 @@
             <label for="r_female">Female</label>
           </div>
         </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit" class="pointer">Sign Up</button>
         <div class="noaccount">
           <span>Already a member ?</span>
           <span onclick="location.href='./login.html'" class="pointer"
