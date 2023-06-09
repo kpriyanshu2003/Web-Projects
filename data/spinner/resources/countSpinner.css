@@ -1,0 +1,46 @@
+.outerDiv {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+#countspinner_circle {
+  background: linear-gradient(#348f50, #012f3e);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#countspinner {
+  position: absolute;
+  border: 5px solid transparent;
+  border-top: 5px solid yellow;
+  border-radius: 50%;
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+}
+
+#countspinner.active {
+  animation: spin 1s ease-in-out infinite;
+}
+
+#countspinner_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 10;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

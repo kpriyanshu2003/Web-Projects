@@ -1,0 +1,26 @@
+.spinner_circle {
+  background: linear-gradient(#348f50, #012f3e);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.spinner {
+  border: 5px solid transparent;
+  border-top: 5px solid yellow;
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
