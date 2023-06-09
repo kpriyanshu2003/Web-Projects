@@ -75,7 +75,7 @@
     "name": "Form Validation",
     "description": "A client side form validator",
     "status": 1,
-    "link": "./data/form-validation/signup.html"
+    "link": "./data/form-validation"
   },
   {
     "name": "Gradient Border",
@@ -154,6 +154,12 @@
     "description": "2nd Creation of rubix cube",
     "status": 1,
     "link": "./data/rubix-cube-v.2.0"
+  },
+  {
+    "name": "Spinner",
+    "description": "Implementation of Spinner Logic",
+    "status": 1,
+    "link": "./data/spinner"
   },
   {
     "name": "Timer",
