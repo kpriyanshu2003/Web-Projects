@@ -132,6 +132,12 @@
     "link": "./data/password-generator"
   },
   {
+    "name": "Password Show/Hide",
+    "description": "Implement logic to show or hide password",
+    "status": 1,
+    "link": "./data/password-show-hide"
+  },
+  {
     "name": "Responsive Grid",
     "description": "Grid that changes width but not arrangement",
     "status": 1,
