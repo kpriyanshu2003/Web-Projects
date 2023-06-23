@@ -13,15 +13,18 @@ const closedEye = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="
 </svg>
 `;
 
-eye.innerHTML = openEye;
+eye.innerHTML = closedEye;
+setTimeout(() => {
+  input[1].type = "password";
+}, 100);
 let a = 1;
 function changeEye() {
   if (a) {
-    eye.innerHTML = closedEye;
+    eye.innerHTML = openEye;
     input[1].type = "text";
     a = 0;
   } else {
-    eye.innerHTML = openEye;
+    eye.innerHTML = closedEye;
     input[1].type = "password";
     a = 1;
   }
