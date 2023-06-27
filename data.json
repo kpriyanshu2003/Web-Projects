@@ -2,199 +2,166 @@
   {
     "name": "Analog Clock",
     "description": "Analog Clock using HTML, TailwindCSS and JS",
-    "status": 1,
     "link": "./data/analog-clock"
   },
   {
     "name": "Axios",
     "description": "Implementation of Axios",
-    "status": 1,
     "link": "./data/axios"
   },
   {
     "name": "Axios vs Fetch",
     "description": "Implementation of Fetch and Axios",
-    "status": 1,
     "link": "./data/axiosVSfetch"
   },
   {
     "name": "Breakpoints",
     "description": "Implementation of breakpoints logic",
-    "status": 1,
     "link": "./data/breakpoints"
   },
   {
     "name": "Calculator",
     "description": "Simple calculator using JS",
-    "status": 1,
     "link": "./data/calculator"
   },
   {
     "name": "Cards",
     "description": "Image Cards",
-    "status": 1,
     "link": "./data/cards"
   },
   {
     "name": "Click Counter",
     "description": "Counts times a button is clicked",
-    "status": 1,
     "link": "./data/click-counter"
   },
   {
     "name": "Clock 12HR",
     "description": "12hr digital clock",
-    "status": 1,
     "link": "./data/clock-12"
   },
   {
     "name": "Clock 24HR",
     "description": "24hr digital clock",
-    "status": 1,
     "link": "./data/clock-24"
   },
   {
     "name": "Digital Clock",
     "description": "12hr digital clock with reflection",
-    "status": 1,
     "link": "./data/digital-clock"
-  },
-  {
-    "name": "Doraemon",
-    "description": "Image of Doraemon using HTML and CSS only",
-    "status": 0,
-    "link": "./data/doraemon"
   },
   {
     "name": "Expanding Flex Cards",
     "description": "Similar to cards, but have aditional styling added",
-    "status": 1,
     "link": "./data/expanding-flex-cards"
   },
   {
     "name": "Form Validation",
     "description": "A client side form validator",
-    "status": 1,
     "link": "./data/form-validation"
   },
   {
     "name": "Gradient Border",
     "description": "Border with a gradient",
-    "status": 1,
     "link": "./data/gradient-border"
   },
   {
     "name": "Image Carousel",
     "description": "Self Explanatory",
-    "status": 1,
     "link": "./data/image-carousel"
   },
   {
     "name": "Image with Text Overlay",
     "description": "An image that shows a text when hovered",
-    "status": 1,
     "link": "./data/img-overlay-txt"
   },
   {
     "name": "Its OK",
     "description": "Make everything OK",
-    "status": 1,
     "link": "./data/its-ok"
   },
   {
     "name": "Loader Animation",
     "description": "Self Explanatory",
-    "status": 1,
     "link": "./data/loader-animation"
   },
   {
     "name": "Login Form",
     "description": "Self Explanatory",
-    "status": 1,
     "link": "./data/login-form"
   },
   {
     "name": "Mouse Pointer",
     "description": "Different types of mouse pointer",
-    "status": 1,
     "link": "./data/mouse-pointer"
+  },
+  {
+    "name": "Nav bar",
+    "description": "Different types of nav bars",
+    "link": "./data/navbar"
   },
   {
     "name": "Overlapping Gallery",
     "description": "Overlapp Images on top of each other",
-    "status": 1,
     "link": "./data/overlapping-gallery"
   },
   {
     "name": "Password Generator",
     "description": "Self Explanatory",
-    "status": 1,
     "link": "./data/password-generator"
   },
   {
     "name": "Password Show/Hide",
     "description": "Implement logic to show or hide password",
-    "status": 1,
     "link": "./data/password-show-hide"
   },
   {
     "name": "Responsive Grid",
     "description": "Grid that changes width but not arrangement",
-    "status": 1,
     "link": "./data/responsive-grid"
   },
   {
     "name": "Rotating Cube",
     "description": "Cube that rotates in 3D",
-    "status": 1,
     "link": "./data/rotating-cube"
   },
   {
     "name": "Rubix Cube v.1.0",
     "description": "1st creation of rubix cube",
-    "status": 1,
     "link": "./data/rubix-cube-v.1.0"
   },
   {
     "name": "Rubix Cube v.2.0",
     "description": "2nd Creation of rubix cube",
-    "status": 1,
     "link": "./data/rubix-cube-v.2.0"
   },
   {
     "name": "Spinner",
     "description": "Implementation of Spinner Logic",
-    "status": 1,
     "link": "./data/spinner"
   },
   {
     "name": "Timer",
     "description": "Self Explanatory",
-    "status": 1,
     "link": "./data/timer"
   },
   {
     "name": "Video Player",
     "description": "Self Explanatory",
-    "status": 1,
     "link": "./data/video-player"
   },
   {
     "name": "Weather Stats",
     "description": "Weather Dashboard",
-    "status": 0,
     "link": "./data/weather-stats"
   },
   {
     "name": "Yeti Login Form",
     "description": "Yeti Themed Login Form",
-    "status": 1,
     "link": "./data/yeti-login-form"
   },
   {
     "name": "Temp Folder",
     "description": "Only for local machine of author",
-    "status": 1,
     "link": "./data/temp"
   }
 ]
