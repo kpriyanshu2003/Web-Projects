@@ -76,7 +76,7 @@ function generate() {
   if (inputt[6].checked) charset += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   if (inputt[7].checked) charset += "abcdefghijklmnopqrstuvwxyz";
   if (inputt[8].checked) charset += "1234567890";
-  if (inputt[9].checked) charset += "!@#$%^&*()-_+=[]{}|;:,.<>/? ~";
+  if (inputt[9].checked) charset += "!@#$%^&*()-_+=[]{}|;:,.<>/?~";
   if (inputt[4].checked) {
     charset = charset.replaceAll("1", "");
     charset = charset.replaceAll("0", "");
