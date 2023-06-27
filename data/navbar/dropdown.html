@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dropdown.css" />
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <span>1. Dropdown v1</span>
+      <div class="uno">
+        <ul>
+          <li class="active" id="uHome"><a href="#" class="active">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div id="uno-dd">
+        <ul>
+          <li>1. Lorem ipsum dolor sit amet.</li>
+          <li>2. Lorem ipsum dolor sit amet.</li>
+          <li>3. Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <span>2. Dropdown v2</span>
+      <div class="dos">
+        <div class="active" id="dHome">
+          <a href="#">Home</a>
+        </div>
+        <div><a href="#">News</a></div>
+        <div><a href="#">Contacts</a></div>
+        <div><a href="#">About</a></div>
+      </div>
+      <div>
+        <div id="dos-dd">
+          <ul>
+            <li>1. Lorem ipsum dolor sit amet.</li>
+            <li>2. Lorem ipsum dolor sit amet.</li>
+            <li>3. Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <span>3. Dropdown v3 (mobile devices)</span>
+      <div class="dos">
+        <div class="active" onclick="change()"><a href="#">Home</a></div>
+        <div><a href="#">News</a></div>
+        <div><a href="#">Contacts</a></div>
+        <div><a href="#">About</a></div>
+      </div>
+      <div id="tres-dd">
+        <div>
+          <ul>
+            <li>1. Lorem ipsum dolor sit amet.</li>
+            <li>2. Lorem ipsum dolor sit amet.</li>
+            <li>3. Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("uHome").addEventListener("mouseenter", () => {
+        document.getElementById("uno-dd").style.display = "block";
+      });
+      document.getElementById("uHome").addEventListener("mouseleave", () => {
+        document.getElementById("uno-dd").style.display = "none";
+      });
+      document.getElementById("dHome").addEventListener("mouseenter", () => {
+        document.getElementById("dos-dd").style.display = "block";
+      });
+      document.getElementById("dHome").addEventListener("mouseleave", () => {
+        document.getElementById("dos-dd").style.display = "none";
+      });
+
+      function change() {
+        if (document.getElementById("tres-dd").style.display === "block")
+          document.getElementById("tres-dd").style.display = "none";
+        else document.getElementById("tres-dd").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

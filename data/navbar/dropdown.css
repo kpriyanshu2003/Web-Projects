@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.uno ul {
+  list-style-type: none;
+  display: flex;
+}
+.uno li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+.uno li {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+}
+
+.uno li.active {
+  background-color: #04aa6d;
+}
+.uno a.active {
+  color: white;
+  cursor: default;
+}
+
+.uno li:hover:not(.active) {
+  background-color: #cac9c9;
+  cursor: pointer;
+}
+.uno a:hover:not(.active) {
+  cursor: pointer;
+}
+
+#uno-dd {
+  display: none;
+}
+.dos {
+  display: flex;
+  margin: 20px 0;
+}
+.dos > div {
+  padding: 10px 20px;
+  background: #f1f1f1;
+}
+
+.dos a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+
+.dos > div.active {
+  background-color: #04aa6d;
+}
+
+.dos > div.active > a {
+  color: white;
+  cursor: pointer;
+}
+
+.dos > div:hover:not(.active) {
+  background-color: #cac9c9;
+  cursor: default;
+}
+
+.dos > div.active > a {
+  cursor: default;
+}
+
+#dos-dd ul {
+  list-style-type: none;
+}
+
+#dos-dd,
+#tres-dd {
+  display: none;
+}

@@ -1,0 +1,66 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.vertical ul {
+  list-style-type: none;
+}
+.vertical li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+.vertical li {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.vertical li.active {
+  background-color: #04aa6d;
+}
+.vertical a.active {
+  color: white;
+  cursor: default;
+}
+
+.vertical li:hover:not(.active) {
+  background-color: #cac9c9;
+  cursor: pointer;
+}
+.vertical a:hover:not(.active) {
+  cursor: pointer;
+}
+
+.horizontal ul {
+  list-style-type: none;
+  display: flex;
+}
+.horizontal li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+.horizontal li {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+}
+
+.horizontal li.active {
+  background-color: #04aa6d;
+}
+.horizontal a.active {
+  color: white;
+  cursor: default;
+}
+
+.horizontal li:hover:not(.active) {
+  background-color: #cac9c9;
+  cursor: pointer;
+}
+.horizontal a:hover:not(.active) {
+  cursor: pointer;
+}
