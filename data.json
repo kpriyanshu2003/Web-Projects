@@ -150,6 +150,11 @@
     "link": "./data/video-player"
   },
   {
+    "name": "WAmsg-gen",
+    "description": "Generates links that can be used to directly send a text message to any user",
+    "link": "./data/wamsg-gen"
+  },
+  {
     "name": "Weather Stats",
     "description": "Weather Dashboard",
     "link": "./data/weather-stats"
