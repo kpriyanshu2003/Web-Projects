@@ -50,6 +50,11 @@
     "link": "./data/digital-clock"
   },
   {
+    "name": "Dynamic Code Injection",
+    "description": "Add static html code to any website that is able to alter its styles, positioning, etc",
+    "link": "./data/dynamic-code-injection"
+  },
+  {
     "name": "Expanding Flex Cards",
     "description": "Similar to cards, but have aditional styling added",
     "link": "./data/expanding-flex-cards"
