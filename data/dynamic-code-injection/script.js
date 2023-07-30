@@ -1,6 +1,7 @@
 /*  Made with ❤️ by Priyanshu
     Adds the above line to any page, this script is added to.
 */
+const NAME = document.getElementById("dyci_priyanshu_name").innerHTML;
 
 document.head.innerHTML += `
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,5 +10,5 @@ document.head.innerHTML += `
 `;
 
 document.body.innerHTML += `
-<div style="width:100%; text-align:center;font-family: 'Raleway', sans-serif;"><span>Made with <span style="color:red">&#10084;</span> by Priyanshu</span></div>
+<div style="width:100%; text-align:center;font-family: 'Raleway', sans-serif;"><span>Made with <span style="color:red">&#10084;</span> by ${NAME}</span></div>
 `;
