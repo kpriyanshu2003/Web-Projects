@@ -85,6 +85,11 @@
     "link": "./data/img-overlay-txt"
   },
   {
+    "name": "qQuery",
+    "description": "JS library to simplify client-side scripting of HTML, making it easier to interact with DOM",
+    "link": "./data/jQuery"
+  },
+  {
     "name": "Its OK",
     "description": "Make everything OK",
     "link": "./data/its-ok"
@@ -143,6 +148,11 @@
     "name": "Rubix Cube v.2.0",
     "description": "2nd Creation of rubix cube",
     "link": "./data/rubix-cube-v.2.0"
+  },
+  {
+    "name": "Scrolling Snap",
+    "description": "Scroll Snapping",
+    "link": "./data/scroll-snap"
   },
   {
     "name": "Spinner",

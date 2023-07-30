@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Tutorial</title>
+  </head>
+  <body>
+    <h1>Welcome to the jQuery Tutorial</h1>
+    <p>
+      jQuery is a popular JavaScript library that simplifies client-side
+      scripting and allows you to interact with the Document Object Model (DOM),
+      handle events, create animations, make AJAX requests, and perform various
+      other common tasks in web development.
+    </p>
+    <h2>Include jQuery script to your html file.</h2>
+    <p>
+      jQuery script is necessary to run jQuery in your browser because natively
+      browser is not able to understand jQuery but JavaScript. To add jQuery
+      script to your html file just add the following link in your head
+    </p>
+    <pre>
+    <code>
+      &lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+    </code>
+  </pre>
+    <h2>Document Ready Function</h2>
+    <p>
+      The following code demonstrates the Document Ready function, which ensures
+      that your jQuery code runs only after the DOM has fully loaded.
+    </p>
+    <pre>
+    <code>
+      $(document).ready(function() {
+        // jQuery code goes here
+      });
+    </code>
+  </pre>
+
+    <h2>Selecting Elements</h2>
+    <p>
+      You can select elements using jQuery just like CSS selectors. The examples
+      below show how to hide paragraphs, show an element by its ID, and select
+      elements by class.
+    </p>
+    <pre>
+    <code>
+      // Select all paragraphs and hide them
+      $("p").hide();
+
+      // Select an element by ID and show it
+      $("#myElement").show();
+
+      // Select elements with a specific class and fadeIn
+      $(".myClass").fadeIn();
+    </code>
+  </pre>
+
+    <h2>Event Handling</h2>
+    <p>
+      jQuery simplifies event handling. Here's an example of attaching a click
+      event to a button with the ID "myButton" and displaying an alert when
+      clicked.
+    </p>
+    <pre>
+    <code>
+      $("#myButton").on("click", function() {
+        alert("Button clicked!");
+      });
+    </code>
+  </pre>
+
+    <h2>Manipulating Styles</h2>
+    <p>
+      You can easily change CSS styles using jQuery. The following example
+      changes the background color of all paragraphs to red.
+    </p>
+    <pre>
+    <code>
+      $("p").css("background-color", "red");
+    </code>
+  </pre>
+
+    <h2>AJAX</h2>
+    <p>
+      jQuery simplifies AJAX requests. The code snippet below demonstrates how
+      to make an AJAX GET request to retrieve data from an API and handle
+      success and error cases.
+    </p>
+    <pre>
+    <code>
+      $.ajax({
+        url: "https://api.example.com/data",
+        method: "GET",
+        success: function(response) {
+          console.log(response);
+        },
+        error: function(error) {
+          console.error(error);
+        }
+      });
+    </code>
+  </pre>
+  </body>
+</html>
