@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inclusive Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+}
+
+.output-container,
+.input-container {
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.output-container-div,
+.input-container-div {
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 6px;
+  height: 192px;
+  overflow: auto;
+  padding: 8px;
+}
+
+.input-container-div {
+  outline: none;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+}

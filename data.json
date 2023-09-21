@@ -65,6 +65,11 @@
     "link": "./data/form-validation"
   },
   {
+    "name": "Full Screen Scroll",
+    "description": "Create sections which cover entire screen and snap scroll",
+    "link": "./data/full-screen-scroll"
+  },
+  {
     "name": "Glass Morphism",
     "description": "Self Explanatory",
     "link": "./data/glass-morphism"
@@ -128,6 +133,11 @@
     "name": "Password Show/Hide",
     "description": "Implement logic to show or hide password",
     "link": "./data/password-show-hide"
+  },
+  {
+    "name": "Realtime HTML",
+    "description": "Write HTML and style the elements in realtime",
+    "link": "./data/realtime-html"
   },
   {
     "name": "Responsive Grid",
