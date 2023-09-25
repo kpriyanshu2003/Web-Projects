@@ -185,11 +185,6 @@
     "link": "./data/wamsg-gen"
   },
   {
-    "name": "Weather Stats",
-    "description": "Weather Dashboard",
-    "link": "./data/weather-stats"
-  },
-  {
     "name": "Yeti Login Form",
     "description": "Yeti Themed Login Form",
     "link": "./data/yeti-login-form"
